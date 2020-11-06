@@ -1,0 +1,50 @@
+@import "./variables";
+.text-ellipsis() {
+  /*postcss-pxtransform rn eject enable*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+/**
+ * NOTE 实现多行文本省略，RN 用 Text 标签的 numberOfLines，H5/小程序用 -webkit-line-clamp
+ */
+.lamp-clamp(@line) {
+  /*postcss-pxtransform rn eject enable*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  /*postcss-pxtransform rn eject disable*/
+}
+
+
+.tabThemeChange() {
+  .at-tabs__header{
+    position: fixed;
+    z-index: 1;
+    font-size: 32px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 88px!important;
+  }
+
+  .at-tabs__item--active {
+    color: @primary;
+  }
+  .at-tabs__item-underline {
+    background-color: @primary;
+    left: 50%;
+    margin-left: -111px;
+    width: 222px;
+  }
+
+  .at-tabs-pane{
+    padding: 118px @base-padding 0;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,32 @@
+@import "~@/assets/less/variables";
+@import "~@/assets/less/mixins";
+
+.page-tabs{
+  margin-top: @base-padding;
+  padding-bottom: @base-padding;
+  background-color: @white;
+  .item{
+    padding-right: 24px;
+    position: relative;
+    padding-left: 40px;
+    font-size: 30px;
+    color: #333333;
+    line-height: 60px;
+    .text-ellipsis();
+    &::after{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 20px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #669DCF;
+    }
+  }
+  .content{
+    min-height: 300px;
+  }
+}
+
+

@@ -1,0 +1,65 @@
+@import "~@/assets/less/variables";
+@import "~@/assets/less/mixins";
+
+.project-tabBar {
+  position: fixed;
+  padding-top: 60px;
+  z-index: 1;
+  bottom: 0;
+  bottom: env(safe-area-inset-bottom);
+  height: 100px;
+  width: 100%;
+  color: #666;
+  .tab-item-wrapper{
+    box-shadow: 0 -4px 6px 0 rgba(238,238,238,0.50);
+    position: relative;
+    //top: env(safe-area-inset-bottom);
+    display: flex;
+    background-color: #fff;
+    .tab-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100px;
+      text-align: center;
+      font-size: 22px;
+      .icon{
+        width: 68px;
+        height: 42px;
+      }
+      .txt{
+        font-size: 22px;
+        color: #999999;
+        line-height: 1;
+      }
+      &.active{
+        color: #247CF0;
+        .txt{
+          color: #247CF0;
+        }
+      }
+    }
+    .add{
+      position: relative;
+      top: -60px;
+      height: 160px;
+      width: 160px;
+      .icon{
+        width: 160px;
+        height: 160px;
+      }
+    }
+  }
+  &:after{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: #fff;
+    content: '';
+  }
+}
+

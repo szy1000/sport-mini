@@ -1,0 +1,17 @@
+.fix-bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  &.iphoneX{
+    bottom: 68px!important;
+  }
+  &.iphoneX::after{
+    position: fixed;
+    content: '';
+    bottom: 0!important;
+    height: 68px!important;
+    width: 100%;
+    background-color: #fff;
+  }
+}
