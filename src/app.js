@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Provider } from 'react-redux'
+import { Provider, connect } from 'react-redux'
 // import { Provider } from '@tarojs/redux'
 import './app.less'
 
@@ -25,7 +25,7 @@ class App extends Component {
 
   // this.props.children 是将要会渲染的页面
   render () {
-    return this.props.children
+    // return this.props.children
     return <Provider store={store}>{this.props.children}</Provider>
   }
 }

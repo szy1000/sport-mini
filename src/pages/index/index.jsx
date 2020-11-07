@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
-import {connect} from "@tarojs/redux";
+import {connect} from "react-redux";
 import { AtButton } from 'taro-ui'
 
 import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.less'
 
-// @connect(({state}) => ({...state}),() =>{})
 class Index extends Component {
 
   componentWillMount () { }
@@ -34,4 +33,4 @@ class Index extends Component {
   }
 }
 
-export default Index
+export default connect((state) => ({...state.home}))(Index)
