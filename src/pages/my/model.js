@@ -5,7 +5,7 @@ import {
 } from './api'
 
 export default {
-  namespace: 'home',
+  namespace: 'my',
   state: {
     init: false,
   },

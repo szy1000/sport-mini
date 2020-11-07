@@ -49,7 +49,7 @@ const promiseFun = async (method, url, params, needCode = false, resolve, reject
     handleUrl = url
   } else {
     // handleUrl = process.env.TARO_ENV === 'weapp' ? URL + url.replace('v1', 'v2') : url
-    handleUrl = process.env.TARO_ENV === 'weapp' ? url.replace('/api/v1/', URL) : url
+    handleUrl = URL + url
   }
 
   if (isRepeat[url]) {

@@ -6,13 +6,13 @@ import { AtButton } from 'taro-ui'
 import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.less'
 
-class Index extends Component {
+class My extends Component {
 
   componentWillMount () { }
 
   componentDidMount () {
     this.props.dispatch({
-      type: 'home/queryPageInit',
+      type: 'my/queryPageInit',
       params: {}
     })
   }
@@ -45,4 +45,4 @@ class Index extends Component {
   }
 }
 
-export default connect((state) => ({...state.home}))(Index)
+export default connect((state) => ({...state.my}))(My)
