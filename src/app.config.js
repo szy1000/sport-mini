@@ -1,6 +1,10 @@
 export default {
   pages: [
     'pages/index/index',
+    'pages/heightWeight/index',
+    'pages/sexAge/index',
+    'pages/destination/index',
+    'pages/login/index',
     'pages/my/index',
     'pages/news/index'
   ],

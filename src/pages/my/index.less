@@ -1,0 +1,83 @@
+.index{
+  .header{
+    position: relative;
+    &-content{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(132px);
+      .content-top{
+        margin: 32px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        .top-item{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .top-item-value{
+            font-size: 44px;
+            font-weight: bold;
+          }
+          .top-item-label{
+            font-size: 22px;
+          }
+        }
+        .top-item:last-of-type{
+          margin-left: 50px;
+        }
+      }
+      .content-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 200px;
+        margin: 32px;
+        padding: 0 32px 0 32px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px 10px #999;
+
+        .card-label{
+          font-size: 24px;
+        }
+        .card-des{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          .des-item{
+            &-label{
+              color: gray;
+              font-size: 24px;
+            }
+            &-value{
+              font-weight: bold;
+              color: black;
+              font-size: 36px;
+            }&-unit{
+               color: black;
+               font-size: 24px;
+             }
+          }
+        }
+      }
+    }
+  }
+  .weight-list{
+    margin: 150px 32px 32px 32px;
+    &-label{
+      font-size: 32px;
+    }
+    &-item{
+      display: flex;
+      flex-direction: row;
+      margin-top: 32px;
+      .list-item-date{
+        flex:1
+      }
+      .list-item-weight{
+      }
+    }
+  }
+
+}
